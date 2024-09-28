@@ -1,0 +1,23 @@
+﻿<Page x:Class="WTFprogramm.Task5Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Задача 5">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <TextBlock Text="Массив будет сгенерирован случайными числами. Программа отсортирует его элементы по возрастанию и убыванию." 
+                       TextWrapping="Wrap" Margin="10"/>
+            <Button Content="Сгенерировать и отсортировать" Width="200" Click="GenerateAndSort_Click"/>
+
+            <TextBlock Text="Исходный массив" Margin="10"/>
+            <DataGrid x:Name="OriginalArrayGrid" AutoGenerateColumns="False" Margin="10"/>
+
+            <TextBlock Text="Массив по возрастанию" Margin="10"/>
+            <DataGrid x:Name="SortedAscendingGrid" AutoGenerateColumns="False" Margin="10"/>
+
+            <TextBlock Text="Массив по убыванию" Margin="10"/>
+            <DataGrid x:Name="SortedDescendingGrid" AutoGenerateColumns="False" Margin="10"/>
+
+            <TextBlock x:Name="MinMaxTextBlock" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Page>

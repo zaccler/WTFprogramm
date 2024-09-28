@@ -1,0 +1,14 @@
+﻿<Page x:Class="WTFprogramm.Task4Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Задача 4">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <TextBlock Text="Массив будет заполнен случайными числами. Программа поменяет местами первый чётный элемент и последний отрицательный." 
+                       TextWrapping="Wrap" Margin="10"/>
+            <Button Content="Сгенерировать и выполнить" Width="200" Click="GenerateAndSwap_Click"/>
+            <TextBlock x:Name="OriginalArrayTextBlock" Margin="10" FontSize="14"/>
+            <TextBlock x:Name="ModifiedArrayTextBlock" Margin="10" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Page>
